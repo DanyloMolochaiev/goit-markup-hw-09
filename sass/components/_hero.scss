@@ -93,21 +93,20 @@
   //   }
   // }
 
-  // ПК
-
-  @media screen and (min-width: 1200px) {
-    max-width: 1600px;
-    height: 600px;
+  // Телефон
+  @media screen and (max-width: 767px) {
+    max-width: 767px;
+    height: 400px;
 
     background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
-      url("../img/hero/des/img.jpg");
+      url("../img/hero/tel/img.jpg");
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       & {
         background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
-          url("../img/hero/des/img@2x.jpg");
+          url("../img/hero/tel/img@2x.jpg");
       }
 
       @media (min-device-pixel-ratio: 3),
@@ -115,7 +114,7 @@
       (min-resolution: 3dppx) {
         & {
           background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
-            url("../img/hero/des/img@3x.jpg");
+            url("../img/hero/tel/img@3x.jpg");
         }
       }
     }
@@ -148,20 +147,21 @@
     }
   }
 
-  // Телефон
-  @media screen and (max-width: 767px) {
-    max-width: 767px;
-    height: 400px;
+  // ПК
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
 
     background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
-      url("../img/hero/tel/img.jpg");
+      url("../img/hero/des/img.jpg");
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       & {
         background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
-          url("../img/hero/tel/img@2x.jpg");
+          url("../img/hero/des/img@2x.jpg");
       }
 
       @media (min-device-pixel-ratio: 3),
@@ -169,7 +169,7 @@
       (min-resolution: 3dppx) {
         & {
           background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
-            url("../img/hero/tel/img@3x.jpg");
+            url("../img/hero/des/img@3x.jpg");
         }
       }
     }
