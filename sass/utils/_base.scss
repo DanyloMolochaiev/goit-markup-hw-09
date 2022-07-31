@@ -1,0 +1,66 @@
+/* Загальне */
+html {
+
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+body {
+
+  &.no-scroll {
+    @extend %noScroll;
+
+  }
+
+  &.no-scroll--burger-menu {
+
+    @extend %noScroll
+  }
+
+  color: var(--primary-text-color);
+  background-color: var(--primery-bg-color);
+
+  font-family: Roboto,
+  sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  width: 1600px;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Обнулили */
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Зображення */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

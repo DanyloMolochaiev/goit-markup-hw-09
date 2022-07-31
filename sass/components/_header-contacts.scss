@@ -1,0 +1,72 @@
+/* Контакти */
+.contacts {
+  @extend %list;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 10px;
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    color: var(--primary-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+
+      color: var(--accent-color);
+    }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+.contacts__img {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.burger-menu__btn {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  padding: 12px 8px;
+
+  &.is-open {
+    z-index: 3;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    display: none;
+  }
+}

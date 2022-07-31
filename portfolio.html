@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./css/main.min.css" />
+
+</head>
+
+<body data-body>
+  <header class="header">
+    <div class="header__block">
+      <nav class="nav">
+        <a class="logo header__logo" data-logo href="./index.html">
+          <span class="logo__info--accent">Web</span>Studio</a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="./index.html">Студия</a>
+          </li>
+          <li class="nav__item nav__item--current">
+            <a class="nav__link nav__link--current" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#address">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="contacts">
+        <li class="contacts__item">
+          <a class="contacts__link" href="mailto:info@devstudio.com">
+            <svg class="contacts__img" aria-label="Електронна адреса" width="16px" height="12px">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="contacts__item">
+          <a class="contacts__link" href="tel:+380961111111"> <svg class="contacts__img" aria-label="Телефон"
+              width="10px" height="16px">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg> +38 096 111 11 11</a>
+        </li>
+      </ul>
+      <button class="burger-menu__btn" data-menu-button type="button" aria-label="мобільне меню кнопка">
+        <svg class="burger-menu__btn-icon" width="24" height="16" aria-label="мобільний перемикач меню">
+          <use class="icon-menu" href="./img/icons.svg#icon-burger"></use>
+          <use class="icon-cross" href="./img/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+    </div>
+    <!-- Панелль телефона -->
+    <div class="tel-panel" data-menu>
+      <ul class="tel-panel__nav">
+        <li class="tel-panel__nav-item tel-panel__nav-item--studio">
+          <a class="tel-panel__nav-link" href="./index.html">Студия</a>
+        </li>
+        <li class="tel-panel__nav-item tel-panel__nav-item--portfolio">
+          <a class="tel-panel__nav-link tel-panel__nav-link--current" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="tel-panel__nav-item">
+          <a class="tel-panel__nav-link" href="#address">Контакты</a>
+        </li>
+      </ul>
+      <ul class="tel-panel__cont-list">
+        <li class="tel-panel__cont-item">
+          <a class="tel-panel__cont-link-tel" href="tel:+380961111111"> +38 096 111 11 11</a>
+        </li>
+        <li class="tel-panel__cont-item">
+          <a class="tel-panel__cont-link-mail" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="tel-panel__network-list">
+        <li class="tel-panel__network-item">
+          <a class="tel-panel__network-link" href="">Instagram</a>
+        </li>
+        <li class="tel-panel__network-item">
+          <a class="tel-panel__network-link" href="">Twitter</a>
+        </li>
+        <li class="tel-panel__network-item">
+          <a class="tel-panel__network-link" href="">Facebook</a>
+        </li>
+        <li class="tel-panel__network-item">
+          <a class="tel-panel__network-link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- Контент -->
+  <main>
+    <section class="galerry">
+      <div class="galerry__container">
+        <h1 class="hidden">Примеры работ</h1>
+        <ul class="galerry__list">
+          <li class="galerry__item">
+            <button class="galerry__btn" type="button">Все</button>
+          </li>
+          <li class="galerry__item">
+            <button class="galerry__btn" type="button">Веб-сайты</button>
+          </li>
+          <li class="galerry__item">
+            <button class="galerry__btn" type="button">Приложения</button>
+          </li>
+          <li class="galerry__item">
+            <button class="galerry__btn" type="button">Дизайн</button>
+          </li>
+          <li class="galerry__item">
+            <button class="galerry__btn" type="button">Маркетинг</button>
+          </li>
+        </ul>
+        <ul class="card-list__list card-list__list--block">
+          <li class="card-list__item galerry-card">
+            <a class="card-list__link card-list__link--grow" href="">
+              <div class="galerry-text-position">
+                <picture class="team-member__img">
+                  <!-- Телефон -->
+                  <source srcset="
+                ./img/portfolio/tel/portfolio01.webp 450w,
+                ./img/portfolio/tel/portfolio01@2x.webp 900w" sizes="(max-width: 767px) 450px, 100vw"
+                    media="(max-width: 767px)">
+                  <!-- Планшет -->
+                  <source srcset="
+                    ./img/portfolio/tab/portfolio01.webp 354w,
+                    ./img/portfolio/tab/portfolio01@2x.webp 708w" sizes="(max-width: 1199px) 354px, 50vw"
+                    media="(max-width: 1199px)">
+                  <!-- Компютер -->
+                  <source srcset="
+                    ./img/portfolio/des/portfolio01.webp 370w,
+                    ./img/portfolio/des/portfolio01@2x.webp 740w" sizes="(min-width: 1200px) 270px, 25vw"
+                    media="(min-width: 1200px)">
+
+                  <!-- Телефон -->
+                  <source srcset="
+                    ./img/portfolio/tel/portfolio01.jpg 450w,
+                    ./img/portfolio/tel/portfolio01@2x.jpg 900w" sizes="(max-width: 767px) 450px, 100vw"
+                    media="(max-width: 767px)">
+                  <!-- Планшет -->
+                  <source srcset="
+                    ./img/portfolio/tab/portfolio01.jpg 354w,
+                    ./img/portfolio/tab/portfolio01@2x.jpg 708w" sizes="(max-width: 1199px) 354px, 50vw"
+                    media="(max-width: 1199px)">
+                  <!-- Компютер -->
+                  <source srcset="
+                    ./img/portfolio/des/portfolio01.jpg 370w,
+                    ./img/portfolio/des/portfolio01@2x.jpg 740w" sizes="(min-width: 1200px) 270px, 25vw"
+                    media="(min-width: 1200px)">
+                  <!-- Страхувальний -->
+                  <img src="./img/portfolio/tel/portfolio01.jpg" alt="Страница сайта Технокряк" />
+                </picture>
+                <p class="card-list__anim-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                  посетителю
+                  получить
+                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                  посетителю
+                  получить
+                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                  посетителю
+                  получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card-list__block card-list__block--grow">
+                <h2 class="card-list__info">Технокряк</h2>
+                <p>Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="card-list__item galerry-card">
+            <a class="card-list__link" href="">
+              <div class="galerry-text-position">
+                <picture class="team-member__img">
+                  <!-- Телефон -->
+                  <source srcset="
+                ./img/portfolio/tel/portfolio02.webp 450w,
+                ./img/portfolio/tel/portfolio02@2x.webp 900w" sizes="(max-width: 767px) 450px, 100vw"
+                    media="(max-width: 767px)">
+                  <!-- Планшет -->
+                  <source srcset="
+                    ./img/portfolio/tab/portfolio02.webp 354w,
+                    ./img/portfolio/tab/portfolio02@2x.webp 708w" sizes="(max-width: 1199px) 354px, 50vw"
+                    media="(max-width: 1199px)">
+                  <!-- Компютер -->
+                  <source srcset="
+                    ./img/portfolio/des/portfolio02.webp 370w,
+                    ./img/portfolio/des/portfolio02@2x.webp 740w" sizes="(min-width: 1200px) 270px, 25vw"
+                    media="(min-width: 1200px)">
+
+                  <!-- Телефон -->
+                  <source srcset="
+                    ./img/portfolio/tel/portfolio02.jpg 450w,
+                    ./img/portfolio/tel/portfolio02@2x.jpg 900w" sizes="(max-width: 767px) 450px, 100vw"
+                    media="(max-width: 767px)">
+                  <!-- Планшет -->
+                  <source srcset="
+                    ./img/portfolio/tab/portfolio02.jpg 354w,
+                    ./img/portfolio/tab/portfolio02@2x.jpg 708w" sizes="(max-width: 1199px) 354px, 50vw"
+                    media="(max-width: 1199px)">
+                  <!-- Компютер -->
+                  <source srcset="
+                    ./img/portfolio/des/portfolio02.jpg 370w,
+                    ./img/portfolio/des/portfolio02@2x.jpg 740w" sizes="(min-width: 1200px) 270px, 25vw"
+                    media="(min-width: 1200px)">
+                  <!-- Страхувальний -->
+                  <img src="./img/portfolio/tel/portfolio02.jpg" alt="Страница сайта Технокряк" />
+                </picture>
+                <p class="card-list__anim-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                  посетителю
+                  получить
+                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                  посетителю
+                  получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card-list__block">
+                <h2 class="card-list__info">Постер New Orlean vs Golden Star</h2>
+                <p>Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="card-list__item galerry-card">
+            <a class="card-list__link " href="">
+              <div class="galerry-text-position">
+                <picture class="team-member__img">
+                  <!-- Телефон -->
+                  <source srcset="
+                ./img/portfolio/tel/portfolio03.webp 450w,
+                ./img/portfolio/tel/portfolio03@2x.webp 900w" sizes="(max-width: 767px) 450px, 100vw"
+                    media="(max-width: 767px)">
+                  <!-- Планшет -->
+                  <source srcset="
+                    ./img/portfolio/tab/portfolio03.webp 354w,
+                    ./img/portfolio/tab/portfolio03@2x.webp 708w" sizes="(max-width: 1199px) 354px, 50vw"
+                    media="(max-width: 1199px)">
+                  <!-- Компютер -->
+                  <source srcset="
+                    ./img/portfolio/des/portfolio02.webp 370w,
+                    ./img/portfolio/des/portfolio03@2x.webp 740w" sizes="(min-width: 1200px) 270px, 25vw"
+                    media="(min-width: 1200px)">
+
+                  <!-- Телефон -->
+                  <source srcset="
+                    ./img/portfolio/tel/portfolio03.jpg 450w,
+                    ./img/portfolio/tel/portfolio03@2x.jpg 900w" sizes="(max-width: 767px) 450px, 100vw"
+                    media="(max-width: 767px)">
+                  <!-- Планшет -->
+                  <source srcset="
+                    ./img/portfolio/tab/portfolio03.jpg 354w,
+                    ./img/portfolio/tab/portfolio03@2x.jpg 708w" sizes="(max-width: 1199px) 354px, 50vw"
+                    media="(max-width: 1199px)">
+                  <!-- Компютер -->
+                  <source srcset="
+                    ./img/portfolio/des/portfolio03.jpg 370w,
+                    ./img/portfolio/des/portfolio03@2x.jpg 740w" sizes="(min-width: 1200px) 270px, 25vw"
+                    media="(min-width: 1200px)">
+                  <!-- Страхувальний -->
+                  <img src="./img/portfolio/tel/portfolio03.jpg" alt="Страница сайта Технокряк" />
+                </picture>
+                <p class="card-list__anim-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                  посетителю
+                  получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card-list__block">
+                <h2 class="card-list__info">Ресторан Seafood</h2>
+                <p>Приложение</p>
+              </div>
+            </a>
+          </li>
+          <li class="card-list__item galerry-card">
+            <a class="card-list__link " href="">
+              <div class="galerry-text-position">
+                <picture class="team-member__img">
+                  <!-- Телефон -->
+                  <source srcset="
+                ./img/portfolio/tel/portfolio04.webp 450w,
+                ./img/portfolio/tel/portfolio04@2x.webp 900w" sizes="(max-width: 767px) 450px, 100vw"
+                    media="(max-width: 767px)">
+                  <!-- Планшет -->
+                  <source srcset="
+                    ./img/portfolio/tab/portfolio04.webp 354w,
+                    ./img/portfolio/tab/portfolio04@2x.webp 708w" sizes="(max-width: 1199px) 354px, 50vw"
+                    media="(max-width: 1199px)">
+                  <!-- Компютер -->
+                  <source srcset="
+                    ./img/portfolio/des/portfolio04.webp 370w,
+                    ./img/portfolio/des/portfolio04@2x.webp 740w" sizes="(min-width: 1200px) 270px, 25vw"
+                    media="(min-width: 1200px)">
+                  <!-- Телефон -->
+                  <source srcset="
+                    ./img/portfolio/tel/portfolio04.jpg 450w,
+                    ./img/portfolio/tel/portfolio04@2x.jpg 900w" sizes="(max-width: 767px) 450px, 100vw"
+                    media="(max-width: 767px)">
+                  <!-- Планшет -->
+                  <source srcset="
+                    ./img/portfolio/tab/portfolio04.jpg 354w,
+                    ./img/portfolio/tab/portfolio04@2x.jpg 708w" sizes="(max-width: 1199px) 354px, 50vw"
+                    media="(max-width: 1199px)">
+                  <!-- Компютер -->
+                  <source srcset="
+                    ./img/portfolio/des/portfolio04.jpg 370w,
+                    ./img/portfolio/des/portfolio04@2x.jpg 740w" sizes="(min-width: 1200px) 270px, 25vw"
+                    media="(min-width: 1200px)">
+                  <!-- Страхувальний -->
+                  <img src="./img/portfolio/tel/portfolio04.jpg" alt="Страница сайта Технокряк" />
+                </picture>
+                <p class="card-list__anim-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                  посетителю
+                  получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card-list__block">
+                <h2 class="card-list__info">Проект Prime</h2>
+                <p>Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="card-list__item galerry-card">
+            <a class="card-list__link " href="">
+              <div class="galerry-text-position">
+                <picture class="team-member__img">
+                  <!-- Телефон -->
+                  <source srcset="
+                ./img/portfolio/tel/portfolio05.webp 450w,
+                ./img/portfolio/tel/portfolio05@2x.webp 900w" sizes="(max-width: 767px) 450px, 100vw"
+                    media="(max-width: 767px)">
+                  <!-- Планшет -->
+                  <source srcset="
+                    ./img/portfolio/tab/portfolio05.webp 354w,
+                    ./img/portfolio/tab/portfolio05@2x.webp 708w" sizes="(max-width: 1199px) 354px, 50vw"
+                    media="(max-width: 1199px)">
+                  <!-- Компютер -->
+                  <source srcset="
+                    ./img/portfolio/des/portfolio05.webp 370w,
+                    ./img/portfolio/des/portfolio05@2x.webp 740w" sizes="(min-width: 1200px) 270px, 25vw"
+                    media="(min-width: 1200px)">
+
+                  <!-- Телефон -->
+                  <source srcset="
+                    ./img/portfolio/tel/portfolio05.jpg 450w,
+                    ./img/portfolio/tel/portfolio05@2x.jpg 900w" sizes="(max-width: 767px) 450px, 100vw"
+                    media="(max-width: 767px)">
+                  <!-- Планшет -->
+                  <source srcset="
+                    ./img/portfolio/tab/portfolio05.jpg 354w,
+                    ./img/portfolio/tab/portfolio05@2x.jpg 708w" sizes="(max-width: 1199px) 354px, 50vw"
+                    media="(max-width: 1199px)">
+                  <!-- Компютер -->
+                  <source srcset="
+                    ./img/portfolio/des/portfolio05.jpg 370w,
+                    ./img/portfolio/des/portfolio05@2x.jpg 740w" sizes="(min-width: 1200px) 270px, 25vw"
+                    media="(min-width: 1200px)">
+                  <!-- Страхувальний -->
+                  <img src="./img/portfolio/tel/portfolio05.jpg" alt="Страница сайта Технокряк" />
+                </picture>
+                <p class="card-list__anim-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                  посетителю
+                  получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card-list__block">
+                <h2 class="card-list__info">Проект Boxes</h2>
+                <p>Приложение</p>
+              </div>
+            </a>
+          </li>
+          <li class="card-list__item galerry-card">
+            <a class="card-list__link " href="">
+              <div class="galerry-text-position">
+                <picture class="team-member__img">
+                  <!-- Телефон -->
+                  <source srcset="
+                ./img/portfolio/tel/portfolio06.webp 450w,
+                ./img/portfolio/tel/portfolio06@2x.webp 900w" sizes="(max-width: 767px) 450px, 100vw"
+                    media="(max-width: 767px)">
+                  <!-- Планшет -->
+                  <source srcset="
+                    ./img/portfolio/tab/portfolio06.webp 354w,
+                    ./img/portfolio/tab/portfolio06@2x.webp 708w" sizes="(max-width: 1199px) 354px, 50vw"
+                    media="(max-width: 1199px)">
+                  <!-- Компютер -->
+                  <source srcset="
+                    ./img/portfolio/des/portfolio06.webp 370w,
+                    ./img/portfolio/des/portfolio02@6x.webp 740w" sizes="(min-width: 1200px) 270px, 25vw"
+                    media="(min-width: 1200px)">
+
+                  <!-- Телефон -->
+                  <source srcset="
+                    ./img/portfolio/tel/portfolio06.jpg 450w,
+                    ./img/portfolio/tel/portfolio06@2x.jpg 900w" sizes="(max-width: 767px) 450px, 100vw"
+                    media="(max-width: 767px)">
+                  <!-- Планшет -->
+                  <source srcset="
+                    ./img/portfolio/tab/portfolio06.jpg 354w,
+                    ./img/portfolio/tab/portfolio06@2x.jpg 708w" sizes="(max-width: 1199px) 354px, 50vw"
+                    media="(max-width: 1199px)">
+                  <!-- Компютер -->
+                  <source srcset="
+                    ./img/portfolio/des/portfolio06.jpg 370w,
+                    ./img/portfolio/des/portfolio06@2x.jpg 740w" sizes="(min-width: 1200px) 270px, 25vw"
+                    media="(min-width: 1200px)">
+                  <!-- Страхувальний -->
+                  <img src="./img/portfolio/tel/portfolio06.jpg" alt="Страница сайта Технокряк" />
+                </picture>
+                <p class="card-list__anim-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                  посетителю
+                  получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card-list__block">
+                <h2 class="card-list__info">Inspiration has no Borders</h2>
+                <p>Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="card-list__item galerry-card">
+            <a class="card-list__link " href="">
+              <div class="galerry-text-position">
+                <picture class="team-member__img">
+                  <!-- Телефон -->
+                  <source srcset="
+                ./img/portfolio/tel/portfolio07.webp 450w,
+                ./img/portfolio/tel/portfolio07@2x.webp 900w" sizes="(max-width: 767px) 450px, 100vw"
+                    media="(max-width: 767px)">
+                  <!-- Планшет -->
+                  <source srcset="
+                    ./img/portfolio/tab/portfolio07.webp 354w,
+                    ./img/portfolio/tab/portfolio07@2x.webp 708w" sizes="(max-width: 1199px) 354px, 50vw"
+                    media="(max-width: 1199px)">
+                  <!-- Компютер -->
+                  <source srcset="
+                    ./img/portfolio/des/portfolio07.webp 370w,
+                    ./img/portfolio/des/portfolio07@2x.webp 740w" sizes="(min-width: 1200px) 270px, 25vw"
+                    media="(min-width: 1200px)">
+
+                  <!-- Телефон -->
+                  <source srcset="
+                    ./img/portfolio/tel/portfolio07.jpg 450w,
+                    ./img/portfolio/tel/portfolio07@2x.jpg 900w" sizes="(max-width: 767px) 450px, 100vw"
+                    media="(max-width: 767px)">
+                  <!-- Планшет -->
+                  <source srcset="
+                    ./img/portfolio/tab/portfolio07.jpg 354w,
+                    ./img/portfolio/tab/portfolio07@2x.jpg 708w" sizes="(max-width: 1199px) 354px, 50vw"
+                    media="(max-width: 1199px)">
+                  <!-- Компютер -->
+                  <source srcset="
+                    ./img/portfolio/des/portfolio07.jpg 370w,
+                    ./img/portfolio/des/portfolio07@2x.jpg 740w" sizes="(min-width: 1200px) 270px, 25vw"
+                    media="(min-width: 1200px)">
+                  <!-- Страхувальний -->
+                  <img src="./img/portfolio/tel/portfolio07.jpg" alt="Страница сайта Технокряк" />
+                </picture>
+                <p class="card-list__anim-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                  посетителю
+                  получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card-list__block">
+                <h2 class="card-list__info">Издание Limited Edition</h2>
+                <p>Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="card-list__item galerry-card">
+            <a class="card-list__link " href="">
+              <div class="galerry-text-position">
+                <picture class="team-member__img">
+                  <!-- Телефон -->
+                  <source srcset="
+                    ./img/portfolio/tel/portfolio08.webp 450w,
+                    ./img/portfolio/tel/portfolio08@2x.webp 900w" sizes="(max-width: 767px) 450px, 100vw"
+                    media="(max-width: 767px)">
+                  <!-- Планшет -->
+                  <source srcset="
+                    ./img/portfolio/tab/portfolio08.webp 354w,
+                    ./img/portfolio/tab/portfolio08@2x.webp 708w" sizes="(max-width: 1199px) 354px, 50vw"
+                    media="(max-width: 1199px)">
+                  <!-- Компютер -->
+                  <source srcset="
+                    ./img/portfolio/des/portfolio08.webp 370w,
+                    ./img/portfolio/des/portfolio08@2x.webp 740w" sizes="(min-width: 1200px) 270px, 25vw"
+                    media="(min-width: 1200px)">
+
+                  <!-- Телефон -->
+                  <source srcset="
+                    ./img/portfolio/tel/portfolio08.jpg 450w,
+                    ./img/portfolio/tel/portfolio08@2x.jpg 900w" sizes="(max-width: 767px) 450px, 100vw"
+                    media="(max-width: 767px)">
+                  <!-- Планшет -->
+                  <source srcset="
+                    ./img/portfolio/tab/portfolio08.jpg 354w,
+                    ./img/portfolio/tab/portfolio08@2x.jpg 708w" sizes="(max-width: 1199px) 354px, 50vw"
+                    media="(max-width: 1199px)">
+                  <!-- Компютер -->
+                  <source srcset="
+                    ./img/portfolio/des/portfolio08.jpg 370w,
+                    ./img/portfolio/des/portfolio08@2x.jpg 740w" sizes="(min-width: 1200px) 270px, 25vw"
+                    media="(min-width: 1200px)">
+                  <!-- Страхувальний -->
+                  <img src="./img/portfolio/tel/portfolio08.jpg" alt="Страница сайта Технокряк" />
+                </picture>
+                <p class="card-list__anim-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                  посетителю
+                  получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card-list__block">
+                <h2 class="card-list__info">Проект LAB</h2>
+                <p>Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="card-list__item galerry-card">
+            <a class="card-list__link " href="">
+              <div class="galerry-text-position">
+                <picture class="team-member__img">
+                  <!-- Телефон -->
+                  <source srcset="
+                ./img/portfolio/tel/portfolio09.webp 450w,
+                ./img/portfolio/tel/portfolio09@2x.webp 900w" sizes="(max-width: 767px) 450px, 100vw"
+                    media="(max-width: 767px)">
+                  <!-- Планшет -->
+                  <source srcset="
+                    ./img/portfolio/tab/portfolio09.webp 354w,
+                    ./img/portfolio/tab/portfolio09@2x.webp 708w" sizes="(max-width: 1199px) 354px, 50vw"
+                    media="(max-width: 1199px)">
+                  <!-- Компютер -->
+                  <source srcset="
+                    ./img/portfolio/des/portfolio09.webp 370w,
+                    ./img/portfolio/des/portfolio09@2x.webp 740w" sizes="(min-width: 1200px) 270px, 25vw"
+                    media="(min-width: 1200px)">
+
+                  <!-- Телефон -->
+                  <source srcset="
+                    ./img/portfolio/tel/portfolio09.jpg 450w,
+                    ./img/portfolio/tel/portfolio09@2x.jpg 900w" sizes="(max-width: 767px) 450px, 100vw"
+                    media="(max-width: 767px)">
+                  <!-- Планшет -->
+                  <source srcset="
+                    ./img/portfolio/tab/portfolio09.jpg 354w,
+                    ./img/portfolio/tab/portfolio09@2x.jpg 708w" sizes="(max-width: 1199px) 354px, 50vw"
+                    media="(max-width: 1199px)">
+                  <!-- Компютер -->
+                  <source srcset="
+                    ./img/portfolio/des/portfolio09.jpg 370w,
+                    ./img/portfolio/des/portfolio09@2x.jpg 740w" sizes="(min-width: 1200px) 270px, 25vw"
+                    media="(min-width: 1200px)">
+                  <!-- Страхувальний -->
+                  <img src="./img/portfolio/tel/portfolio09.jpg" alt="Страница сайта Технокряк" />
+                </picture>
+                <p class="card-list__anim-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                  посетителю
+                  получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card-list__block">
+                <h2 class="card-list__info">Growing Business</h2>
+                <p>Приложение</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Футер сайта -->
+  <footer class="footer">
+    <ul class="footer__container">
+      <li class="container__blok">
+        <div class="logo__list">
+          <div class="logo__logo">
+            <a class="logo__info logo" href="./index.html">
+              <span class="logo__info--accent">Web</span>Studio</a>
+          </div>
+          <address id="address" class="address">
+            <div class="logo__logo">
+              <a class="address__text" target="_blank" href="https://goo.gl/maps/QLkYeELodZ8mEa568">г. Киев, пр-т Леси
+                Украинки,
+                26</a>
+            </div>
+            <ul class="address__list">
+              <li class="logo__logo">
+                <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="logo__logo">
+                <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="social">
+          <strong class="social__text--title">присоединяйтесь</strong>
+          <ul class="social__list">
+            <li>
+              <a class="social__animation--pulse" href=" ">
+                <svg class="social__image" aria-label="instagram">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__animation--pulse" href=" ">
+                <svg class="social__image" aria-label="Twitter">
+                  <use href="./images/icons.svg#icon-Group"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__animation--pulse" href=" ">
+                <svg class="social__image" aria-label="facebook">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__animation--pulse" href=" ">
+                <svg class="social__image" aria-label="linkedin">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="subtitle">
+        <p class="subtitle__social--title">Подпишитесь на рассылку</p>
+        <form class="subscribe__form">
+          <input class="subscribe__input" type="email" name="subscribe" autocomplete="on" placeholder="E-mail"
+            pattern=".+@globex\.com" size="30" required />
+          <button class="subscribe__btn" type="submit">
+            <span class="subscribe__btn--text">Подписаться</span>
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </li>
+    </ul>
+  </footer>
+  <script src="./js/burger-menu.js" type="module"></script>
+</body>
+
+</html>

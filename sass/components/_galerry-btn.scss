@@ -1,0 +1,61 @@
+// Галерея кнопки
+
+.galerry {
+  @extend %section;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__list {
+    @extend %list;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+    gap: 8px;
+
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      justify-content: center;
+    }
+    gap: 8px;
+    row-gap: 16px
+  }
+}
+
+.hidden {
+  @extend %hidden;
+}
+.galerry__btn {
+  padding: 6px 22px;
+
+  border-radius: 4px;
+  border: none;
+
+  color: var(--titel-link-color);
+  background-color: var(--secondary-bg-color);
+
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+
+  transition: color var(--transition-timing-function),
+    background-color var(--transition-timing-function),
+    box-shadow var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+    box-shadow: var(--galerry-button-hover-box-shadow);
+
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,232 @@
+/* Герой */
+.hero {
+  margin-right: auto;
+  margin-left: auto;
+
+
+  background-color: var(--footer-hero-bg-color);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  // // webp
+  // // Телефон
+  // @media screen and (max-width: 767px) {
+  //   max-width: 767px;
+  //   height: 400px;
+
+  //   background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
+  //     url("../img/hero/tel/img.webp");
+
+  //   @media (min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //     & {
+  //       background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
+  //         url("../img/hero/tel/img@2x.webp");
+  //     }
+
+  //     @media (min-device-pixel-ratio: 3),
+  //     (min-resolution: 288dpi),
+  //     (min-resolution: 3dppx) {
+  //       & {
+  //         background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
+  //           url("../img/hero/tel/img@3x.webp");
+  //       }
+  //     }
+  //   }
+  // }
+
+  // // Планшет
+  // @media screen and (min-width:768px) and (max-width: 1199px) {
+  //   max-width: 1199px;
+  //   height: 400px;
+
+  //   background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
+  //     url("../img/hero/tab/img.webp");
+
+  //   @media (min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //     & {
+  //       background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
+  //         url("../img/hero/tab/img@2x.webp");
+  //     }
+
+  //     @media (min-device-pixel-ratio: 3),
+  //     (min-resolution: 288dpi),
+  //     (min-resolution: 3dppx) {
+  //       & {
+  //         background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
+  //           url("../img/hero/tab/img@3x.webp");
+  //       }
+  //     }
+  //   }
+  // }
+
+  // ПК  
+
+  // @media screen and (min-width: 1200px) {
+  //   max-width: 1600px;
+  //   height: 600px;
+
+  //   background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
+  //     url("../img/hero/des/img.webp");
+
+  //   @media (min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //     & {
+  //       background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
+  //         url("../img/hero/des/img@2x.webp");
+  //     }
+
+  //     @media (min-device-pixel-ratio: 3),
+  //     (min-resolution: 288dpi),
+  //     (min-resolution: 3dppx) {
+  //       & {
+  //         background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
+  //           url("../img/hero/des/img@3x.webp");
+  //       }
+  //     }
+  //   }
+  // }
+
+  // ПК
+
+  @media screen and (min-width: 1200px){
+    max-width: 1600px;
+    height: 600px;
+
+    background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
+      url("../img/hero/des/img.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
+          url("../img/hero/des/img@2x.jpg");
+      }
+
+      @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+        & {
+          background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
+            url("../img/hero/des/img@3x.jpg");
+        }
+      }
+    }
+  }
+
+  // Планшет
+  @media screen and (min-width:768px){
+    max-width: 1199px;
+    height: 400px;
+
+    background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
+      url("../img/hero/tab/img.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
+          url("../img/hero/tab/img@2x.jpg");
+      }
+
+      @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+        & {
+          background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
+            url("../img/hero/tab/img@3x.jpg");
+        }
+      }
+    }
+  }
+
+  // Телефон
+  @media screen and (max-width: 767px) {
+    max-width: 767px;
+    height: 400px;
+
+    background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
+      url("../img/hero/tel/img.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
+          url("../img/hero/tel/img@2x.jpg");
+      }
+
+      @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+        & {
+          background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
+            url("../img/hero/tel/img@3x.jpg");
+        }
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 400px;
+    padding: 118px 0;
+
+<<<<<<< HEAD
+
+    @media screen and (min-width: 1200px) {
+      max-width: 1600px;
+      // padding: 200px 0;
+    }
+=======
+>>>>>>> af7721e7c4c137800e103b8c06bdae0ea8acdc79
+  }
+}
+
+// текс героя
+.hero__titel {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  color: var(--primary-bg-color);
+
+  font-weight: 900;
+
+  font-size: 26px;
+
+  @media screen and (max-width: 360px) {
+    font-size: calc(26px + (70 - 10)*((100vw - 360px) / (1200 - 360)));
+  }
+
+  line-height: 1.615;
+
+  max-width: 360px;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
+
+}
+
+// кнопка героя
+.btn {
+  @extend %btn;
+}

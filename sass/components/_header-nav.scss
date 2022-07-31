@@ -1,0 +1,74 @@
+// Навігація блоку
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__list {
+    @extend %list;
+
+    display: flex;
+    padding: 0px;
+    margin: -1px;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 767px) {
+      gap: 50px
+    }
+
+  }
+}
+
+// Навігаційне меню сайту
+.nav__item {
+
+  gap: 50px;
+}
+
+.nav__link {
+  @extend %link;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--titel-link-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+// Меню кнопок
+.nav__item--current {
+  &::after {
+    content: '';
+
+    position: absolute;
+
+    display: block;
+
+    width: 100%;
+    height: 4px;
+
+    background-color: var(--accent-color);
+    border-radius: 2px;
+
+    left: 0;
+    bottom: 0;
+
+    transition: background-color var(--transition-timing-function-close),
+  }
+}
+
+.nav__item--current {
+  position: relative;
+}
+
+.nav__link--current {
+  color: var(--accent-color);
+}

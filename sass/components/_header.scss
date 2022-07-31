@@ -1,0 +1,18 @@
+/* Шапка сайта */
+.header {
+
+  border-bottom: 1px solid var(--border-bottom);
+  margin-bottom: -1px;
+
+  &__block {
+    @extend %container;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+      height: 60px;
+    }
+  }
+}
