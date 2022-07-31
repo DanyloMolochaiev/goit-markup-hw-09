@@ -95,7 +95,7 @@
 
   // ПК
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     max-width: 1600px;
     height: 600px;
 
@@ -122,7 +122,7 @@
   }
 
   // Планшет
-  @media screen and (min-width:768px){
+  @media screen and (min-width:768px) {
     max-width: 1199px;
     height: 400px;
 
@@ -184,14 +184,10 @@
     max-width: 400px;
     padding: 118px 0;
 
-<<<<<<< HEAD
-
     @media screen and (min-width: 1200px) {
       max-width: 1600px;
       // padding: 200px 0;
     }
-=======
->>>>>>> af7721e7c4c137800e103b8c06bdae0ea8acdc79
   }
 }
 

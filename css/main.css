@@ -578,6 +578,11 @@ body.no-scroll, body.no-scroll--burger-menu {
   max-width: 400px;
   padding: 118px 0;
 }
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    max-width: 1600px;
+  }
+}
 
 .hero__titel {
   margin-top: 0px;
