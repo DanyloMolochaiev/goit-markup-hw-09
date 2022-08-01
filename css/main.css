@@ -500,8 +500,8 @@ body.no-scroll, body.no-scroll--burger-menu {
   padding-bottom: 118px;
   max-width: 1600px;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--linear-gradient)), to(var(--linear-gradient))), url("../img/рhero/tel/img.jpg");
-  background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)), url("../img/рhero/tel/img.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--linear-gradient)), to(var(--linear-gradient))), url("../img/hero/tel/img.jpg");
+  background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)), url("../img/hero/tel/img.jpg");
   background-color: var(--footer-hero-bg-color);
   background-repeat: no-repeat;
   background-position: center;
@@ -529,14 +529,14 @@ body.no-scroll, body.no-scroll--burger-menu {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--linear-gradient)), to(var(--linear-gradient))), url("../img/hhero/ddes/img.jpg");
-    background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)), url("../img/hhero/ddes/img.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--linear-gradient)), to(var(--linear-gradient))), url("../img/hero/des/img.jpg");
+    background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)), url("../img/hero/des/img.jpg");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--linear-gradient)), to(var(--linear-gradient))), url("../img/hhero/ddes/img@2x.jpg");
-    background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)), url("../img/hhero/ddes/img@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--linear-gradient)), to(var(--linear-gradient))), url("../img/hero/des/img@2x.jpg");
+    background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)), url("../img/hero/des/img@2x.jpg");
   }
 }
 
