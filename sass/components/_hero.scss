@@ -73,14 +73,14 @@
     padding-bottom: 200px;
 
     background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
-      url("../i1mg/hero/des/img.jpg");
+      url("../img/team/tel/team03.webp 450w");
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       & {
         background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
-          url("../i1mg/hero/des/img@2x.jpg");
+          url("../img/team/tel/team03.webp 450w");
       }
 
       @media (min-device-pixel-ratio: 3),
@@ -88,7 +88,7 @@
       (min-resolution: 3dppx) {
         & {
           background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
-            url("../i1mg/hhero/ddes/img@3x.jpg");
+            url("../img/team/tel/team03.webp 450w");
         }
       }
     }
