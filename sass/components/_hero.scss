@@ -58,14 +58,14 @@
           url("../img/hhero/ddes/img@2x.jpg");
       }
 
-      @media (min-device-pixel-ratio: 3),
-      (min-resolution: 288dpi),
-      (min-resolution: 3dppx) {
-        & {
-          background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
-            url("../img/hhero/ddes/img@3x.jpg");
-        }
-      }
+      // @media (min-device-pixel-ratio: 3),
+      // (min-resolution: 288dpi),
+      // (min-resolution: 3dppx) {
+      //   & {
+      //     background-image: linear-gradient(to right, var(--linear-gradient), var(--linear-gradient)),
+      //       url("../img/hhero/ddes/img@3x.jpg");
+      //   }
+      // }
     }
   }
 }
